@@ -4,6 +4,26 @@ import random
 import math
 from time import datetime
 
+#creating random birthdays
+class birthdays(math, random):
+
+    def __init__(self, day, month, year):
+        self.day=day
+        self.month=month
+        self.year=year
+
+    def main(self): #random birthday combination
+        pass
+
+
+#creating random residential address
+#creating random
+
+
+
+
+
+
 class People(object):
 
     def __init__(self, first_name, last_name, gender, age, profession, income, race):
@@ -38,9 +58,18 @@ class fake_people(People):
         self.manufacture_date=manufacture_date
 
 
-p_1=People("Julia", "Roberts", female, 49)
-p_2=People("Sandra", "Evans", female, 54)
+def Profile(): #creating objects
+    real_profile = real_people()
+    fake_profile = fake_people()
+    real_profile.residential_address = "rejdkfaljfa"
+    fake_profile.manufacture_date = "slkjfljdflkds"
 
 
-print People.fullname(p_1)
+# p_1=People("Julia", "Roberts", female, 49)
+# p_2=People("Sandra", "Evans", female, 54)
 
+
+# print People.fullname(p_1)
+
+if __name__=="__main__":
+    Profile()
